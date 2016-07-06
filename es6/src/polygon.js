@@ -30,13 +30,13 @@ export class Square extends Polygon {
 
 export class Circle extends Polygon {
   constructor(height) { 
-23     super(height); 
-24     this.width = this.height; 
-25     this.name = "Circle"; 
-26   } 
-27 
+     super(height); 
+     this.width = this.height; 
+     this.name = "Circle"; 
+   } 
  
-28   get area() { return this.height * this.width;} 
+ 
+   get area() { return this.height * this.width;} 
 }
 
 
