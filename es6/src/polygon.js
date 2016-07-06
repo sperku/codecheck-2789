@@ -29,7 +29,17 @@ export class Square extends Polygon {
 }
 
 export class Circle {
-  
+   constructor(height) { 
+23     super(height); 
+24     this.height *= 2;
+       this.width = this.height;
+25     this.name = "Square"; 
+26   } 
+27 
+ 
+28   get area() { return this.height/2 * this.width/2 * Math.PI;} 
+29 } 
+
 }
 
 
