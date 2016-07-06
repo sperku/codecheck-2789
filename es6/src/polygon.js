@@ -31,6 +31,7 @@ export class Square extends Polygon {
 export class Circle extends Polygon {
   constructor(height) { 
      super(height); 
+     this.height *= 2
      this.width = this.height; 
      this.name = "Circle"; 
    } 
