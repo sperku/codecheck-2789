@@ -37,7 +37,7 @@ export class Circle extends Polygon {
    } 
  
  
-   get area() { return this.height * this.width;} 
+   get area() { return (this.height/2) * (this.width/2) * Math.PI;} 
 }
 
 
