@@ -19,9 +19,9 @@ export class Rectangle extends Polygon {
 }
 
 export class Square extends Polygon {
-  constructor(height, 1) {
+  constructor(height) {
     super(height);
-	this.width = this.height;
+    this.width = this.height;
     this.name = "Square";
   }
 
