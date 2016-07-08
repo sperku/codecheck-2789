@@ -9,9 +9,5 @@ export function sleep(time) {
   });
 }
 
-sleep()
-  .then (
-    return;  
-  );
-    
+
   
