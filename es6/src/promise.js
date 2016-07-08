@@ -1,4 +1,6 @@
 export function sleep(time) {
-  return null;
+  return new Promise(function(resolve, reject) {
+    var value = time ;
+  });
 }
 
