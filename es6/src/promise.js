@@ -8,10 +8,6 @@ export function sleep(time) {
   });
 }
 
-sleep(time)
-  .then (
-    return null;
-    );
 
 
   
