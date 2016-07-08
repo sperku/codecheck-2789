@@ -3,11 +3,15 @@ export function sleep(time) {
     var value = time ;
     if (value < 0) {
       reject(); 
-      return;
     }
     setTimeout(resolve, value);
   });
 }
+
+sleep(time)
+  .then (
+    return;
+    );
 
 
   
