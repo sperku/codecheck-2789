@@ -5,8 +5,9 @@ export function sleep(time) {
       reject();
       return;
     }
-    setTimeout(resolve, value);
-    return;
+    setTimeout(function() {
+      resolve();
+    }, value);
   });
 }
 
