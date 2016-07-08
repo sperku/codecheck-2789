@@ -10,7 +10,7 @@ export function sleep(time) {
 
 sleep(time)
   .then (
-    return;
+    return null;
     );
 
 
