@@ -5,16 +5,16 @@ export function sleep(time) {
       reject();
       return;
     }
-    setTimeout(function() {
-      resolve();
-    }, value);
+    resolve();
   });
 }
 
 var time;
 
-sleep(time).then (function(){
-  return null;
+sleep(time).then (function onFullfilled(){
+  setTimeout(function(){
+     return null;
+  }, time);
 });
 
   
