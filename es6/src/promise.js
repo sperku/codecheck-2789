@@ -13,7 +13,7 @@ var time;
 
 sleep(time).then (function onFullfilled(){
   setTimeout(function(){
-     return null;
+     return;
   }, time);
 });
 
