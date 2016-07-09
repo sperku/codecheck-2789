@@ -1,7 +1,7 @@
 export 	function sleep(time) {
 	  return new Promise(function(resolve, reject) {
 	    if (time < 0) {
-	      reject();
+	      reject(time);
 	      return;
 	    }
 	     setTimeout(function(){
