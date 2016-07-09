@@ -7,7 +7,7 @@ export 	function sleep(time) {
 	     setTimeout(function(){
 	     resolve(time);
 	     return;
-	     }, value);
+	     }, time);
 	  });
 }
 
