@@ -12,7 +12,7 @@ export function sleep(time) {
 }
 
 
-sleep(time).then (function(){
+sleep().then (function(){
   return null;
 });
 
