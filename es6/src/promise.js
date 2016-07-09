@@ -9,8 +9,6 @@ export function sleep(time) {
   });
 }
 
-var time;
-
 sleep(time).then (function onFullfilled(){
   setTimeout(function(){
      return;
