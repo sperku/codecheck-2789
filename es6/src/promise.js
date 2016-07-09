@@ -11,8 +11,9 @@ export function sleep(time) {
   });
 }
 
+var time;
 
-sleep().then (function(){
+sleep(time).then (function(){
   return null;
 });
 
