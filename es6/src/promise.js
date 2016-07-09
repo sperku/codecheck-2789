@@ -12,5 +12,8 @@ export function sleep(time) {
 }
 
 
+sleep(time).then (function(){
+  return null;
+});
 
   
