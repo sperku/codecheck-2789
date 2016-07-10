@@ -7,13 +7,9 @@ export class Cipher {
 
 export class CaesarCipher extends Cipher {
   constructor(int){
-    super(str);
+    super.encrypt(str);
     this.int = int;
-    
-  }
-  
-  encrypt(str) {
-    var arr = str.split("");
+     var arr = str.split("");
     
     var alf = "abcdefghijklmnopqrstuvwxyz";
     
@@ -25,8 +21,9 @@ export class CaesarCipher extends Cipher {
     }
     
     arr.forEach(Encrypter);
-    str = arr.join('');
-    return str;
+    var str2 = arr.join('');
+    return str2;
+    
   }
 }
 
