@@ -39,16 +39,16 @@ export class CaesarCipher extends Cipher {
     
     var alf = "wxyzabcdefghijklmnopqrstuvwxyz";
     
-    function Encrypter (element, index, array){
+    function Decrypter (element, index, array){
     var place = alf.lastIndexOf(element); 
       if (place != -1) {
-         place += num;
+         place -= num;
          var newChar = alf.charAt(place);
          array[index] = newChar;
       }
     }
     
-    arr.forEach(Encrypter);
+    arr.forEach(Decrypter);
     str = arr.join('');
     return str;
   }
