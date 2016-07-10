@@ -6,6 +6,7 @@ export class Cipher {
 }
 
 export class CaesarCipher extends Cipher {
+  var int;
   constructor(int){
     super();
     this.int = int;
@@ -26,6 +27,7 @@ export class CaesarCipher extends Cipher {
     
     arr.forEach(Encrypter);
     str = arr.join('');
+    return str;
   }
 }
 
