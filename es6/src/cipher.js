@@ -7,8 +7,9 @@ export class Cipher {
 
 export class CaesarCipher extends Cipher {
   constructor(int){
-    this.int = int;
     super(str);
+    this.int = int;
+    
     
     var arr = str.split("");
     
