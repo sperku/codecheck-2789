@@ -20,7 +20,9 @@ export class CaesarCipher extends Cipher {
     
     function Encrypter (element, index, array){
     var place = alf.indexOf(element); 
-    place += num;
+      if (place != -1) {
+         place += num;
+      }
     var newChar = alf.charAt(place);
     array[index] = newChar;
     }
