@@ -45,9 +45,9 @@ export class CaesarCipher extends Cipher {
     function Decrypter (element, index, array){
     var place = alf.indexOf(element); 
       if (place != -1) {
-        place += num;
-        if (place > alf.length){
-          place -= 26
+        place -= num;
+        if (place < 0){
+          place += 26
         }
          var newChar = alf.charAt(place);
          array[index] = newChar;
