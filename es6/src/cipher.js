@@ -6,7 +6,6 @@ export class Cipher {
 }
 
 export class CaesarCipher extends Cipher {
-  var int;
   constructor(int){
     super();
     this.int = int;
