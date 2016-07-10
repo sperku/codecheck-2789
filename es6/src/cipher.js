@@ -22,9 +22,9 @@ export class CaesarCipher extends Cipher {
     var place = alf.indexOf(element); 
       if (place != -1) {
          place += num;
+         var newChar = alf.charAt(place);
+         array[index] = newChar;
       }
-    var newChar = alf.charAt(place);
-    array[index] = newChar;
     }
     
     arr.forEach(Encrypter);
