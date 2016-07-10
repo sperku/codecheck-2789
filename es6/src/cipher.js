@@ -13,13 +13,14 @@ export class CaesarCipher extends Cipher {
   
   encrypt(str){
     super.encrypt(str);
-     var arr = str.split("");
+    var num = this.int;
+    var arr = str.split("");
     
     var alf = "abcdefghijklmnopqrstuvwxyzabcd";
     
     function Encrypter (element, index, array){
     var place = alf.indexOf(element); 
-    place += this.int;
+    place += num;
     var newChar = alf.charAt(place);
     array[index] = newChar;
     }
