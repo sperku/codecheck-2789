@@ -31,5 +31,26 @@ export class CaesarCipher extends Cipher {
     str = arr.join('');
     return str;
   }
+  
+  decrypt(str){
+    super.decrypt(str);
+    var num = this.int;
+    var arr = str.split("");
+    
+    var alf = "wxyzabcdefghijklmnopqrstuvwxyz";
+    
+    function Encrypter (element, index, array){
+    var place = alf.lastIndexOf(element); 
+      if (place != -1) {
+         place += num;
+         var newChar = alf.charAt(place);
+         array[index] = newChar;
+      }
+    }
+    
+    arr.forEach(Encrypter);
+    str = arr.join('');
+    return str;
+  }
 }
 
