@@ -10,7 +10,9 @@ export class CaesarCipher extends Cipher {
     super(str);
     this.int = int;
     
-    
+  }
+  
+  encrypt(str) {
     var arr = str.split("");
     
     var alf = "abcdefghijklmnopqrstuvwxyz";
@@ -23,7 +25,8 @@ export class CaesarCipher extends Cipher {
     }
     
     arr.forEach(Encrypter);
-    return;
+    str = arr.join('');
+    return str;
   }
 }
 
