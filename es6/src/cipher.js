@@ -12,7 +12,6 @@ export class CaesarCipher extends Cipher {
   }
   
   encrypt(str){
-    super(str);
     super.encrypt(str);
      var arr = str.split("");
     
