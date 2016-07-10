@@ -15,7 +15,7 @@ export class CaesarCipher extends Cipher {
     super.encrypt(str);
      var arr = str.split("");
     
-    var alf = "abcdefghijklmnopqrstuvwxyz";
+    var alf = "abcdefghijklmnopqrstuvwxyzabcd";
     
     function Encrypter (element, index, array){
     var place = alf.indexOf(element); 
