@@ -40,12 +40,15 @@ export class CaesarCipher extends Cipher {
     var num = this.int;
     var arr = str.split("");
     
-    var alf = "wxyzabcdefghijklmnopqrstuvwxyz";
+    var alf = "abcdefghijklmnopqrstuvwxyz";
     
     function Decrypter (element, index, array){
-    var place = alf.lastIndexOf(element); 
+    var place = alf.indexOf(element); 
       if (place != -1) {
-         place -= num;
+        place += num;
+        if (place > alf.length){
+          place -= 26
+        }
          var newChar = alf.charAt(place);
          array[index] = newChar;
       }
