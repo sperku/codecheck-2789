@@ -18,8 +18,17 @@ export class CaesarCipher extends Cipher {
     
     var alf = "abcdefghijklmnopqrstuvwxyz";
     
+    var alfUp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    
+    function ConvertUpLow (element, index, array) {
+      if (alfUp.match(element)){
+        var placeUp = alfUp.indexOf(element);
+        array[index] = alf.charAt(placeUp);
+      }
+    }
+    
     function Encrypter (element, index, array){
-    var place = alf.indexOf(element); 
+    var place = alf.indexOf(element);
       if (place != -1) {
         place += num;
         if (place > alf.length){
@@ -30,6 +39,7 @@ export class CaesarCipher extends Cipher {
       }
     }
     
+    arr.forEach(ConvertUpLow);
     arr.forEach(Encrypter);
     str = arr.join('');
     return str;
@@ -41,6 +51,15 @@ export class CaesarCipher extends Cipher {
     var arr = str.split("");
     
     var alf = "abcdefghijklmnopqrstuvwxyz";
+    
+    var alfUp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    
+    function ConvertUpLow (element, index, array) {
+      if (alfUp.match(element)){
+        var placeUp = alfUp.indexOf(element);
+        array[index] = alf.charAt(placeUp);
+      }
+    }
     
     function Decrypter (element, index, array){
     var place = alf.indexOf(element); 
@@ -54,9 +73,12 @@ export class CaesarCipher extends Cipher {
       }
     }
     
+    arr.forEach(ConvertUpLow);
     arr.forEach(Decrypter);
     str = arr.join('');
     return str;
   }
+  
+  
 }
 
